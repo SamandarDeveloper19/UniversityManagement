@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Api", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Api.Tests.Unit", "UniversityManagement.Api.Tests.Unit\UniversityManagement.Api.Tests.Unit.csproj", "{9E189C64-DF26-4A86-ACAF-ABBEC4694B91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Api.Infrastructure.Build", "UniversityManagement.Api.Infrastructure.Build\UniversityManagement.Api.Infrastructure.Build.csproj", "{A922DF13-7E3B-44C7-AADE-E02254690450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9E189C64-DF26-4A86-ACAF-ABBEC4694B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E189C64-DF26-4A86-ACAF-ABBEC4694B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E189C64-DF26-4A86-ACAF-ABBEC4694B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A922DF13-7E3B-44C7-AADE-E02254690450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A922DF13-7E3B-44C7-AADE-E02254690450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A922DF13-7E3B-44C7-AADE-E02254690450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A922DF13-7E3B-44C7-AADE-E02254690450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
