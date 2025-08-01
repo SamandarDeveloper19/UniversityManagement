@@ -10,6 +10,7 @@ namespace UniversityManagement.Api
 
             // Add services to the container.
             builder.Services.AddDbContext<StorageBroker>();
+            builder.Services.AddTransient<IStorageBroker, StorageBroker>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
