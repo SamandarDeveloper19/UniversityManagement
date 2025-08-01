@@ -1,3 +1,5 @@
+using UniversityManagement.Api.Brokers.Storages;
+
 namespace UniversityManagement.Api
 {
     public class Program
@@ -7,6 +9,7 @@ namespace UniversityManagement.Api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<StorageBroker>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
