@@ -1,3 +1,4 @@
+using UniversityManagement.Api.Brokers.Loggings;
 using UniversityManagement.Api.Brokers.Storages;
 
 namespace UniversityManagement.Api
@@ -10,7 +11,7 @@ namespace UniversityManagement.Api
 
             // Add services to the container.
             builder.Services.AddDbContext<StorageBroker>();
-            builder.Services.AddTransient<IStorageBroker, StorageBroker>();
+            AddBrokers(builder);
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -28,6 +29,12 @@ namespace UniversityManagement.Api
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
+        }
+
+        private static void AddBrokers(WebApplicationBuilder builder)
+        {
+            builder.Services.AddTransient<IStorageBroker, StorageBroker>();
+            builder.Services.AddTransient<ILoggingBroker, LoggingBroker>();
         }
     }
 }
